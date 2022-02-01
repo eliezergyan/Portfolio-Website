@@ -5,7 +5,8 @@ body {
 .about-me {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    height: 42.9em;
+    /* height: 42.9em; */
+    height: 100vh;
 }
 
 .sidebar {
@@ -15,7 +16,7 @@ body {
 
 .right-side {
     grid-column: 2 / 3;
-    /* background-color:  */
+    background-color:  black;
 }
 
 .profile-pic img {
