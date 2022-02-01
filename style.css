@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 42.9em;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    background-color: rgb(12, 12, 12);
+}
+
+.right-side {
+    grid-column: 2 / 3;
+    /* background-color:  */
+}
+
+.profile-pic img {
+    height: 10em;
+    width: 10em;
+    border: 3px solid grey;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-name {
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 0.1em;
+    text-decoration: underline;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links {
+    color: whitesmoke;
+    font-size: 1.5em;
+    line-height: 2.2em;
+}
+
+.copyright {
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    margin-top: 3.6em;
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+}
