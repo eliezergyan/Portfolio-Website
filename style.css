@@ -5,18 +5,20 @@ body {
 .about-me {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    /* height: 42.9em; */
     height: 100vh;
 }
 
 .sidebar {
     grid-column: 1 / 2;
     background-color: rgb(12, 12, 12);
+    position: fixed;
+    width: 25%;
 }
 
 .right-side {
     grid-column: 2 / 3;
-    background-color:  black;
+    font-size: 1.4em;
+    background-color: rgb(204, 204, 204);
 }
 
 .profile-pic img {
@@ -59,7 +61,25 @@ body {
     margin-top: 3.6em;
 }
 
+.image {
+    height: 100vh;
+}
+
 .right-side img {
     width: 100%;
     height: 100%;
 }
+
+.right-side h2 {
+    text-align: center;
+}
+
+#skills ul{
+    list-style: square;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
