@@ -6,6 +6,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     height: 100vh;
+}  
+
+#about p {
+    padding: 0em 1em 0em 1em;
 }
 
 .sidebar {
@@ -21,10 +25,11 @@ body {
     background-color: rgb(204, 204, 204);
 }
 
+
 .profile-pic img {
     height: 10em;
     width: 10em;
-    border: 3px solid grey;
+    border: 0.2em solid grey;
     border-radius: 50%;
     margin-top: 2em;
 }
@@ -62,7 +67,29 @@ body {
 }
 
 .image {
+    position: relative;
     height: 100vh;
+    display: flex;
+    align-items: center; 
+    z-index: 1;
+}
+
+.text-block {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 2;
+    margin-left: 2em;
+    font-size: 2em;
+    line-height: 0.3em;
+    padding: 0em 1em 0em 1em;
+    border-radius: 0.1em;
+    color: whitesmoke;
+}
+
+.text-block span {
+    color: lavender;
+    font-size: 1.2em;
 }
 
 .right-side img {
@@ -83,3 +110,50 @@ a {
     text-decoration: none;
 }
 
+.contact-page {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        display: flex;
+        width: 100vw;
+        height: 10vh;
+        position: fixed;
+        margin: 0px;
+    }   
+
+    .right-side {
+        width: 100vw;
+    }
+
+    .nav-links {
+        display: flex;
+        line-height: 1em;
+        padding-left: 0.2em;
+        margin-top: -0.65em;
+    }
+    
+    .nav-links li {
+        display: inline;
+        width: 100vw;
+        padding-left: 0.9em;
+    }
+
+    .profile-name, .copyright, .profile-pic {
+        display: none;
+    }
+
+    .about-me {
+        font-size: 0.8em;
+    }
+
+    .contact-page {
+        margin-top: 1.5em;
+    }
+
+    .contact-page h1 {
+        text-align: center;
+    }
+}
